@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Innovatech Systems</title>
+  <meta name="description" content="Software, datos y automatización con foco en resultados. Diseños limpios, ingeniería sólida y entregas en sprints." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/main.css" />
+  <script defer src="/scripts/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <span class="logo">››</span>
+        <span class="brand-name">INNOVATECH</span>
+      </a>
+      <nav class="menu" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#soluciones">Soluciones</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#por-que">¿Por qué?</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn primary" href="#contacto">Cotizar</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="drawer">☰</button>
+    </div>
+    <nav id="drawer" class="drawer" hidden>
+      <a href="#servicios">Servicios</a>
+  <a href="#soluciones">Soluciones</a>
+      <a href="#tecnologias">Tecnologías</a>
+      <a href="#por-que">¿Por qué?</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn primary" href="#contacto">Cotizar</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="pill">Innovación ágil</p>
+          <h1>Somos <span class="accent">INNOVATECH</span> construimos</h1>
+          <p class="lead">Diseño y desarrollo de plataformas web, apps móviles e integraciones. Enfoque en resultados reales y entregas por sprints.</p>
+          <div class="actions">
+            <a class="btn primary" href="#contacto">Cotizar ahora</a>
+            <a class="btn ghost" href="#servicios">Ver servicios</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><strong>+20</strong><span>proyectos</span></div>
+            <div class="stat"><strong>&lt; 6 sem</strong><span>MVP promedio</span></div>
+            <div class="stat"><strong>99.9%</strong><span>uptime apps</span></div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="device-mockup">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1280&auto=format&fit=crop" alt="Panel de control en laptop, tablet y móvil"/>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Soluciones: Sistemas, POS, SCM -->
+    <section id="soluciones" class="section alt">
+      <div class="container">
+        <h2>Soluciones</h2>
+        <p class="section-lead">Paquetes listos para operar y adaptables a tu negocio.</p>
+        <div class="cards grid-3">
+          <article class="card">
+            <div class="icon">⚙</div>
+            <h3>Sistemas a medida</h3>
+            <p>ERPs ligeros, intranets, portales de clientes y gestión operativa con reportes.</p>
+            <div class="chips">
+              <span class="chip">Roles & permisos</span>
+              <span class="chip">Reportes</span>
+              <span class="chip">APIs</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="icon">🧾</div>
+            <h3>POS — Punto de Venta</h3>
+            <p>Ventas rápidas, inventario, cajas, cortes y facturación electrónica (EC).</p>
+            <div class="chips">
+              <span class="chip">Inventario</span>
+              <span class="chip">Cajas</span>
+              <span class="chip">Facturación</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="icon">📦</div>
+            <h3>SCM — Supply Chain</h3>
+            <p>Compras, proveedores, inventario multi‑sucursal y seguimiento logístico.</p>
+            <div class="chips">
+              <span class="chip">Compras</span>
+              <span class="chip">Proveedores</span>
+              <span class="chip">Multi‑sucursal</span>
+            </div>
+          </article>
+        </div>
+        <div class="actions" style="margin-top:18px">
+          <a class="btn primary" href="#contacto">Solicitar demo</a>
+          <a class="btn ghost" href="#contacto">Preguntar por precios</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="section">
+      <div class="container">
+        <h2>Servicios</h2>
+        <p class="section-lead">Soluciones end‑to‑end para lanzar y escalar productos digitales.</p>
+        <div class="cards grid-3">
+          <article class="card">
+            <div class="icon">▦</div>
+            <h3>Web Apps & Dashboards</h3>
+            <p>React / Vue, APIs REST, autenticación, roles, paneles y reportes en tiempo real.</p>
+          </article>
+          <article class="card">
+            <div class="icon">✦</div>
+            <h3>Apps móviles</h3>
+            <p>iOS/Android con React Native o Ionic. Publicación en stores y analítica.</p>
+          </article>
+          <article class="card">
+            <div class="icon">≡</div>
+            <h3>Automatización & Integraciones</h3>
+            <p>Bots, cron jobs, facturación electrónica, pasarelas de pago y ERP.</p>
+          </article>
+          <article class="card">
+            <div class="icon">▭</div>
+            <h3>Diseño UI · UX</h3>
+            <p>Branding, prototipos de alta fidelidad y sistemas de diseño.</p>
+          </article>
+          <article class="card">
+            <div class="icon">λ</div>
+            <h3>Data & Analytics</h3>
+            <p>Dashboards, ETL, métricas de producto y decisiones basadas en datos.</p>
+          </article>
+          <article class="card">
+            <div class="icon">＋</div>
+            <h3>Soporte & Escalado</h3>
+            <p>Infra Docker, CI/CD, monitoreo, seguridad y rendimiento.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tecnologías -->
+    <section id="tecnologias" class="section alt">
+      <div class="container">
+        <h2>Tecnologías</h2>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <h4>Frontend</h4>
+            <div class="chips">
+              <span class="chip">React</span>
+              <span class="chip">Flutter</span>
+              <span class="chip">C# Windows Forms</span>
+              <span class="chip">TailwindCSS</span>
+            </div>
+          </div>
+          <div class="tech-card">
+            <h4>Backend</h4>
+            <div class="chips">
+              <span class="chip">.NET C#</span>
+              <span class="chip">Python</span>
+              <span class="chip">Golang</span>
+            </div>
+          </div>
+          <div class="tech-card">
+            <h4>Integraciones & Bots</h4>
+            <div class="chips">
+              <span class="chip">REST/GraphQL</span>
+              <span class="chip">Webhooks</span>
+              <span class="chip">Pasarelas de pago</span>
+              <span class="chip">Automatización</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Historia / Por qué -->
+    <section id="por-que" class="section">
+      <div class="container why-grid">
+        <div>
+          <p class="pill">Nuestra historia</p>
+          <h2>Cómo nació <span class="accent">INNOVATECH</span></h2>
+          <p>Desde 2025 ayudamos a equipos a convertir ideas en productos listos para mercado. Trabajamos con un enfoque pragmático: diseño claro, entregas rápidas y métricas desde el inicio.</p>
+          <p>Podemos compartir referencias verificables durante una llamada de descubrimiento.</p>
+
+          <div class="badges">
+            <div class="badge"><strong>2025</strong><span>Fundación</span></div>
+            <div class="badge"><strong>Guayaquil</strong><span>Ciudad</span></div>
+            <div class="badge"><strong>Sprints + CI/CD</strong><span>Enfoque</span></div>
+          </div>
+        </div>
+        <ul class="timeline">
+          <li><span class="dot"></span><div><strong>2025</strong> Equipo compacto, enfoque senior. Inicio de automatizaciones y despliegues robustos.</div></li>
+          <li><span class="dot"></span><div><strong>Hoy</strong> Crecimiento sostenido con soporte directo del founder.</div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section alt">
+      <div class="container contact-grid">
+        <div class="card form">
+          <h2>Cuéntanos tu proyecto</h2>
+          <p class="section-lead">Respondemos en menos de 24h hábiles.</p>
+          <form id="contact-form">
+            <div class="grid-2">
+              <label>Nombre*
+                <input name="name" required placeholder="Tu nombre" />
+              </label>
+              <label>Email o WhatsApp*
+                <input name="contact" required placeholder="tucorreo@dominio.com / +593..." />
+              </label>
+            </div>
+            <label>Empresa (opcional)
+              <input name="company" placeholder="Nombre de tu empresa" />
+            </label>
+            <label>¿Qué necesitas construir?*
+              <textarea name="message" rows="5" required placeholder="Cuéntanos objetivo, alcance, plazos y cualquier referencia."></textarea>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" required /> Acepto ser contactado (requerido)
+            </label>
+            <div class="actions">
+              <button class="btn primary" type="submit">Enviar</button>
+              <a class="btn ghost" id="whatsapp-btn" href="#">WhatsApp</a>
+            </div>
+            <p class="fine">Al enviar aceptas nuestra política de contacto. No compartimos tus datos con terceros.</p>
+          </form>
+        </div>
+        <aside class="contact-aside">
+          <div class="info"><span>✉</span> garciajonathan268@gmail.com</div>
+          <div class="info"><span>☎</span> +593 987 285 191</div>
+          <div class="info"><span>☎</span> +593 99 496 4832</div>
+          <div class="info"><span>📍</span> Guayaquil · Ecuador</div>
+          <p class="fine">Tiempo de arranque: 48–72h desde la aprobación del alcance.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+    <div>
+        <a class="brand" href="#home"><span class="logo">››</span><span class="brand-name">INNOVATECH</span></a>
+        <p>Construimos software, datos y automatización con foco en resultados. Diseño limpio, ingeniería sólida y entregas en sprints.</p>
+        <div class="socials">
+          <a aria-label="Instagram" href="#"></a>
+          <a aria-label="Facebook" href="#"></a>
+          <a aria-label="TikTok" href="#">♫</a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#soluciones">Soluciones</a></li>
+          <li><a href="#tecnologias">Tecnologías</a></li>
+          <li><a href="#por-que">¿Por qué?</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contáctanos</h4>
+        <ul>
+      <li>garciajonathan268@gmail.com</li>
+      <li>+593 987 285 191</li>
+      <li>+593 99 496 4832</li>
+      <li>Guayaquil · Ecuador</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container legal">
+      <small>© 2025 INNOVATECH. Todos los derechos reservados.</small>
+      <div class="links">
+        <a href="#">Términos</a>
+        <a href="#">Privacidad</a>
+        <a href="#home">Volver arriba ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
