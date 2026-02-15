@@ -32,8 +32,8 @@ if (toggle && drawer) {
   };
 
   const stored = localStorage.getItem(KEY);
-  const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-  const initial = stored || (prefersLight ? 'light' : 'dark');
+  // Por defecto 'dark' si el usuario no ha elegido uno manualmente
+  const initial = stored || 'dark';
   apply(initial);
 
   const toggleTheme = () => {
