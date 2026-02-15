@@ -13,6 +13,7 @@
   <meta name="theme-color" content="#f7fbff" media="(prefers-color-scheme: light)">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/api-comparison.css" />
   <script defer src="./scripts/main.js"></script>
 </head>
 <body>
@@ -81,40 +82,191 @@
         <h2>Soluciones</h2>
         <p class="section-lead">Paquetes listos para operar y adaptables a tu negocio.</p>
         <div class="cards grid-3">
-          <article class="card">
-            <div class="icon">⚙</div>
-            <h3>Sistemas a medida</h3>
-            <p>ERPs ligeros, intranets, portales de clientes y gestión operativa con reportes.</p>
+          <article class="card interactive" id="card-api">
+            <div class="icon">⚡</div>
+            <h3>API Facturación</h3>
+            <p>Integración nativa en PHP para desarrolladores, SaaS y ERPs con latencia optimizada.</p>
             <div class="chips">
-              <span class="chip">Roles & permisos</span>
-              <span class="chip">Reportes</span>
-              <span class="chip">APIs</span>
+              <span class="chip">Pura API (PHP)</span>
+              <span class="chip">REST / JSON</span>
+              <span class="chip">Multi-RUC</span>
+            </div>
+            <div style="margin-top: 15px;">
+              <a href="http://76.13.124.41/docs/manual_usuario.html" target="_blank" class="btn ghost small manual-btn">📖 Ver Documentación</a>
             </div>
           </article>
           <article class="card">
             <div class="icon">🧾</div>
-            <h3>POS — Punto de Venta</h3>
-            <p>Ventas rápidas, inventario, cajas, cortes y facturación electrónica (EC).</p>
+            <h3>Punto de Venta (POS)</h3>
+            <p>Sistema completo para locales físicos: inventario, cajas, cortes y ventas rápidas.</p>
             <div class="chips">
               <span class="chip">Inventario</span>
               <span class="chip">Cajas</span>
-              <span class="chip">Facturación</span>
+              <span class="chip">Reportes</span>
             </div>
           </article>
           <article class="card">
-            <div class="icon">📦</div>
-            <h3>SCM — Supply Chain</h3>
-            <p>Compras, proveedores, inventario multi‑sucursal y seguimiento logístico.</p>
+            <div class="icon">�</div>
+            <h3>Solo Facturador</h3>
+            <p>Portal web simplificado para emitir facturas, retenciones y guías sin complicaciones.</p>
             <div class="chips">
-              <span class="chip">Compras</span>
-              <span class="chip">Proveedores</span>
-              <span class="chip">Multi‑sucursal</span>
+              <span class="chip">Web Portal</span>
+              <span class="chip">Firma digital</span>
+              <span class="chip">Económico</span>
             </div>
           </article>
         </div>
         <div class="actions" style="margin-top:18px">
           <a class="btn primary" href="#contacto">Solicitar demo</a>
           <a class="btn ghost" href="#contacto">Preguntar por precios</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- API Comparison Section (Detailed) -->
+    <section id="api-details" class="api-comparison-section">
+      <div class="page-compare">
+        <!-- Header -->
+        <div class="compare-header">
+          <div class="compare-header-label">Comparación de mercado — Ecuador 2025</div>
+          <h2>Plataformas de <em>Facturación</em><br>¿Cuál te conviene?</h2>
+          <p>Precio · Funcionalidades · Límites · Tecnología · Modelo de negocio</p>
+        </div>
+
+        <div class="note-banner">
+          <span>NOTA:</span>
+          Precios obtenidos de sitios oficiales (feb 2025). Todos los planes incluyen autorización SRI.
+        </div>
+
+        <!-- Main comparison table -->
+        <div style="overflow-x: auto;">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th style="width: 200px;">Características</th>
+                <th class="col-us">
+                  <div class="col-us-wrapper">
+                    <div class="col-name">Plan Básico</div>
+                    <div style="font-size:9px;color:rgba(0,212,255,0.5);margin-top:2px;">Emprendedores / RIMPE</div>
+                  </div>
+                </th>
+                <th class="col-us">
+                  <div class="col-us-wrapper">
+                    <div class="col-name">Plan Profesional</div>
+                    <div style="font-size:9px;color:rgba(0,212,255,0.5);margin-top:2px;">PYMES / Negocios</div>
+                  </div>
+                </th>
+                <th class="col-us">
+                  <div class="col-name">Corporativo</div>
+                  <div style="font-size:9px;color:rgba(0,212,255,0.5);margin-top:2px;">Multiempresa</div>
+                </th>
+                <th class="col-us">
+                  <div class="col-name">Prepago</div>
+                  <div style="font-size:9px;color:rgba(0,212,255,0.5);margin-top:2px;">Por Créditos</div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="cat-row"><td colspan="5">💰 Inversión y Alcance</td></tr>
+              <tr>
+                <td>Precio Mensual</td>
+                <td class="us-cell"><div class="price-main price-brand"><span class="currency">$</span>10</div></td>
+                <td class="us-cell"><div class="price-main price-brand"><span class="currency">$</span>25</div></td>
+                <td class="us-cell"><div class="price-main price-brand"><span class="currency">$</span>60</div></td>
+                <td class="us-cell"><div style="font-size:12px;">Desde $15</div></td>
+              </tr>
+              <tr>
+                <td>Comprobantes</td>
+                <td class="us-cell">Hasta 150 / mes</td>
+                <td class="us-cell good">Ilimitados</td>
+                <td class="us-cell good">Ilimitados</td>
+                <td class="us-cell">100 a 1000 docs</td>
+              </tr>
+              <tr>
+                <td>Perfil de Usuario</td>
+                <td class="us-cell" style="font-size:11px; line-height:1.4;">Tiendas pequeñas, médicos, abogados, independientes.</td>
+                <td class="us-cell" style="font-size:11px; line-height:1.4;">Ferreterías, restaurantes, negocios con flujo constante.</td>
+                <td class="us-cell" style="font-size:11px; line-height:1.4;">Empresas con varias sucursales o grupos económicos.</td>
+                <td class="us-cell" style="font-size:11px; line-height:1.4;">Usuarios que no desean compromisos mensuales.</td>
+              </tr>
+              
+              <tr class="cat-row"><td colspan="5">⚙️ Capacidades</td></tr>
+              <tr>
+                <td>Gestión Multi-RUC</td>
+                <td class="us-cell"><span class="no">✗</span></td>
+                <td class="us-cell"><span class="no">✗</span></td>
+                <td class="us-cell good"><span class="yes">✓ Hasta 5 empresas</span></td>
+                <td class="us-cell"><span class="no">✗</span></td>
+              </tr>
+              <tr>
+                <td>Sucursales</td>
+                <td class="us-cell">1 Sucursal</td>
+                <td class="us-cell">Múltiples (1 RUC)</td>
+                <td class="us-cell good">Múltiples (5 RUCs)</td>
+                <td class="us-cell">1 Sucursal</td>
+              </tr>
+              <tr>
+                <td>API REST / JSON</td>
+                <td class="us-cell"><span class="yes">✓</span></td>
+                <td class="us-cell"><span class="yes">✓</span></td>
+                <td class="us-cell"><span class="yes">✓</span></td>
+                <td class="us-cell"><span class="yes">✓</span></td>
+              </tr>
+
+              <tr class="cat-row"><td colspan="5">� Detalles de Prepago (Créditos)</td></tr>
+              <tr>
+                <td>Paquetes</td>
+                <td class="us-cell">—</td>
+                <td class="us-cell">—</td>
+                <td class="us-cell">—</td>
+                <td class="us-cell us-cell-last" style="font-size:11px; text-align: left; padding: 15px;">
+                    • 100 docs: $15 ($0.15 c/u)<br>
+                    • 500 docs: $50 ($0.10 c/u)<br>
+                    • 1000 docs: $70 ($0.07 c/u)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="section-compare-title">Detalles de nuestros paquetes</div>
+        <div class="insights-grid" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="insight-card">
+            <div class="insight-title">Plan Profesional <em>(PYMES)</em></div>
+            <div class="insight-body">
+              <strong>$25 mensuales</strong><br>
+              Comprobantes ilimitados.<br>
+              Para ferreterías, restaurantes y negocios con flujo constante.
+            </div>
+          </div>
+          <div class="insight-card hot">
+            <div class="insight-title">Plan Corporativo <em>(Multiempresa)</em></div>
+            <div class="insight-body">
+              <strong>$60 mensuales</strong><br>
+              Comprobantes ilimitados.<br>
+              Gestión de hasta 5 empresas o sucursales (RUCs) independientes.
+            </div>
+          </div>
+          <div class="insight-card">
+            <div class="insight-title">Modelo por <em>Créditos</em></div>
+            <div class="insight-body">
+              <strong>Sin mensualidades</strong><br>
+              100 docs: $15 ($0.15/u)<br>
+              500 docs: $50 ($0.10/u)<br>
+              1000 docs: $70 ($0.07/u)
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-compare">
+          <div class="cta-text">
+            <h3 style="color:#f0eee8; margin: 0 0 5px 0;">¿Listo para integrar nuestra <em>API PHP</em>?</h3>
+            <p style="font-size:12px; color:rgba(230,238,248,0.4); margin: 0;">REST API · XAdES-BES · SRI Ecuador · 100% PHP</p>
+          </div>
+          <div class="actions" style="margin: 0;">
+            <a href="http://76.13.124.41/docs/manual_usuario.html" target="_blank" class="btn ghost">Manual Técnico</a>
+            <a href="#contacto" class="btn primary">Empezar gratis →</a>
+          </div>
         </div>
       </div>
     </section>

@@ -88,3 +88,20 @@ if (floatWA) {
     window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
   });
 }
+
+// API Details Toggle
+const apiCard = document.getElementById('card-api');
+const apiSection = document.getElementById('api-details');
+
+if (apiCard && apiSection) {
+  apiCard.style.cursor = 'pointer';
+  apiCard.addEventListener('click', (e) => {
+    // Si el clic fue en el botón del manual, no hacer toggle de la sección
+    if (e.target.closest('.manual-btn')) return;
+    
+    apiSection.classList.toggle('active');
+    if (apiSection.classList.contains('active')) {
+      apiSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+}
