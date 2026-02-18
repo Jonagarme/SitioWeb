@@ -3,6 +3,8 @@
   --surface: #0f1722;
   --text: #e6eef8;
   --muted: #b3c0d1;
+  --brand-text: #a7ecff;
+  --brand-surface: rgba(0, 212, 255, .12);
   --line: #1d2a38;
   --brand: #00d4ff;
   /* cyan */
@@ -18,7 +20,9 @@
   --bg: #f7fbff;
   --surface: #ffffff;
   --text: #0f1722;
-  --muted: #3b4a5e;
+  --muted: #334155;
+  --brand-text: #0369a1;
+  --brand-surface: rgba(0, 212, 255, 0.08);
   --line: #dbe6f2;
   --shadow: 0 10px 30px rgba(16, 24, 40, .08);
 }
@@ -254,8 +258,8 @@ a {
   gap: 6px;
   padding: 6px 10px;
   border-radius: 999px;
-  background: rgba(0, 212, 255, .12);
-  color: #a7ecff;
+  background: var(--brand-surface);
+  color: var(--brand-text);
   border: 1px solid rgba(20, 184, 255, .25);
   font-weight: 600
 }
@@ -320,7 +324,7 @@ a {
 
 .stat strong {
   font-size: 18px;
-  color: #ccf3ff
+  color: var(--brand-text)
 }
 
 .device-mockup {
@@ -415,8 +419,8 @@ h4 {
   display: grid;
   place-items: center;
   border-radius: 10px;
-  background: rgba(0, 212, 255, .12);
-  color: #a7ecff;
+  background: var(--brand-surface);
+  color: var(--brand-text);
   border: 1px solid rgba(20, 184, 255, .2);
   margin-bottom: 8px
 }
@@ -460,8 +464,8 @@ h4 {
 .chip {
   padding: 6px 10px;
   border-radius: 999px;
-  background: rgba(0, 212, 255, .12);
-  color: #a7ecff;
+  background: var(--brand-surface);
+  color: var(--brand-text);
   border: 1px solid rgba(20, 184, 255, .25);
   font-size: 13px
 }
@@ -507,7 +511,7 @@ h4 {
   border-radius: 50%;
   display: inline-block;
   margin-left: -22px;
-  border: 2px solid #06202b
+  border: 2px solid var(--surface)
 }
 
 .timeline li {
