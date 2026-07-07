@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Innovatech Systems</title>
-  <meta name="description" content="Software, datos y automatización con foco en resultados. Diseños limpios, ingeniería sólida y entregas en sprints." />
+  <title>Logify — Sistema de Punto de Venta y Facturación</title>
+  <meta name="description" content="Logify: Gestión, control de inventario, punto de venta y facturación electrónica robusta para tu negocio." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Favicon -->
@@ -21,8 +21,8 @@
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="#home">
-        <span class="logo">››</span>
-        <span class="brand-name">INNOVATECH</span>
+        <img class="brand-logo" src="./assets/img/logo.jpeg" alt="Logify Logo" />
+        <span class="brand-name">Logify</span>
       </a>
       <nav class="menu" aria-label="Principal">
         <a href="#servicios">Servicios</a>
@@ -50,35 +50,45 @@
     <!-- Hero -->
     <section id="home" class="hero">
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="pill">Innovación ágil</p>
-          <h1>Somos <span class="accent">INNOVATECH</span> construimos</h1>
-          <p class="lead">Diseño y desarrollo de plataformas web, apps móviles e integraciones. Enfoque en resultados reales y entregas por sprints.</p>
+        <div class="hero-copy fade-in-up">
+          <p class="pill">Gestión Inteligente</p>
+          <h1>Tu facturación y POS con <span class="accent">Logify</span></h1>
+          <p class="lead">Punto de venta, control de inventario y facturación electrónica autorizada por el SRI. Diseñado para optimizar la gestión de tu negocio de manera rápida y segura.</p>
           <ul class="features">
-            <li>Entrega MVP &lt; 6 semanas</li>
-            <li>CI/CD y despliegues automáticos</li>
-            <li>Soporte directo</li>
+            <li>Facturación Electrónica SRI</li>
+            <li>Control de Inventario y Kardex</li>
+            <li>Soporte Técnico Especializado</li>
           </ul>
           <div class="actions">
             <a class="btn primary" href="#contacto">Cotizar ahora</a>
             <a class="btn ghost" href="#servicios">Ver servicios</a>
           </div>
           <div class="stats">
-            <div class="stat"><strong>+5</strong><span>proyectos</span></div>
-            <div class="stat"><strong>&lt; 6 sem</strong><span>MVP promedio</span></div>
-            <div class="stat"><strong>99.9%</strong><span>uptime apps</span></div>
+            <div class="stat"><strong>+100</strong><span>clientes</span></div>
+            <div class="stat"><strong>100%</strong><span>en la nube</span></div>
+            <div class="stat"><strong>99.99%</strong><span>disponibilidad</span></div>
           </div>
         </div>
-        <div class="hero-media">
-          <div class="device-mockup">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1280&auto=format&fit=crop" alt="Panel de control en laptop, tablet y móvil"/>
+        <div class="hero-media fade-in-up">
+          <div class="browser-frame">
+            <div class="browser-header">
+              <div class="browser-dots">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+              </div>
+              <div class="browser-address">app.logify.com/dashboard</div>
+            </div>
+            <div class="browser-content">
+              <img src="./assets/img/dashboard.png" alt="Panel de control Logify"/>
+            </div>
           </div>
         </div>
       </div>
     </section>
     
     <!-- Soluciones: Sistemas, POS, SCM -->
-    <section id="soluciones" class="section alt">
+    <section id="soluciones" class="section alt fade-in-up">
       <div class="container">
         <h2>Soluciones</h2>
         <p class="section-lead">Paquetes listos para operar y adaptables a tu negocio.</p>
@@ -120,6 +130,134 @@
         <div class="actions" style="margin-top:18px">
           <a class="btn primary" href="#contacto">Solicitar demo</a>
           <a class="btn ghost" href="#contacto">Preguntar por precios</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vista Previa del Sistema / Galería Interactiva -->
+    <section id="galeria" class="section fade-in-up">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 40px;">
+          <p class="pill">Tu negocio en pantalla</p>
+          <h2 style="margin-top: 10px;">Explora la interfaz de <span class="accent">Logify</span></h2>
+          <p class="section-lead">Pantallas reales de nuestra plataforma diseñadas para facilitar tu día a día.</p>
+        </div>
+
+        <div class="gallery-tabs">
+          <button class="gallery-tab active" data-target="gallery-dashboard">Dashboard</button>
+          <button class="gallery-tab" data-target="gallery-ventas">Ventas POS</button>
+          <button class="gallery-tab" data-target="gallery-productos">Productos</button>
+          <button class="gallery-tab" data-target="gallery-kardex">Inventario (Kardex)</button>
+        </div>
+
+        <div class="gallery-content">
+          <div id="gallery-dashboard" class="gallery-panel active">
+            <div class="gallery-grid">
+              <div class="gallery-image-container browser-frame">
+                <div class="browser-header">
+                  <div class="browser-dots">
+                    <span class="browser-dot red"></span>
+                    <span class="browser-dot yellow"></span>
+                    <span class="browser-dot green"></span>
+                  </div>
+                  <div class="browser-address">app.logify.com/dashboard</div>
+                </div>
+                <div class="browser-content">
+                  <img src="./assets/img/dashboard.png" alt="Panel de control Logify" />
+                </div>
+              </div>
+              <div class="gallery-description">
+                <h3>Panel de Control Integrado</h3>
+                <p>Visualiza en tiempo real el rendimiento de tu negocio. Accede a métricas de ventas diarias, comprobantes emitidos, gráficos de crecimiento y alertas de stock desde un único lugar accesible en la nube.</p>
+                <ul class="features">
+                  <li>Indicadores en tiempo real</li>
+                  <li>Gráficos dinámicos de ventas</li>
+                  <li>Accesible desde móvil y desktop</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="gallery-ventas" class="gallery-panel">
+            <div class="gallery-grid">
+              <div class="gallery-image-container browser-frame">
+                <div class="browser-header">
+                  <div class="browser-dots">
+                    <span class="browser-dot red"></span>
+                    <span class="browser-dot yellow"></span>
+                    <span class="browser-dot green"></span>
+                  </div>
+                  <div class="browser-address">app.logify.com/pos</div>
+                </div>
+                <div class="browser-content">
+                  <img src="./assets/img/ventas.png" alt="Ventas y facturación rápida Logify" />
+                </div>
+              </div>
+              <div class="gallery-description">
+                <h3>Facturación y Ventas POS</h3>
+                <p>Agiliza la atención al cliente con nuestro módulo de ventas rápidas. Registra transacciones en segundos, emite comprobantes autorizados directamente por el SRI y gestiona los métodos de pago fácilmente.</p>
+                <ul class="features">
+                  <li>Emisión instantánea</li>
+                  <li>Búsqueda rápida de clientes</li>
+                  <li>Múltiples formas de pago</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="gallery-productos" class="gallery-panel">
+            <div class="gallery-grid">
+              <div class="gallery-image-container browser-frame">
+                <div class="browser-header">
+                  <div class="browser-dots">
+                    <span class="browser-dot red"></span>
+                    <span class="browser-dot yellow"></span>
+                    <span class="browser-dot green"></span>
+                  </div>
+                  <div class="browser-address">app.logify.com/products</div>
+                </div>
+                <div class="browser-content">
+                  <img src="./assets/img/productos.png" alt="Gestión de productos en Logify" />
+                </div>
+              </div>
+              <div class="gallery-description">
+                <h3>Catálogo de Productos</h3>
+                <p>Administra tu catálogo con facilidad. Define precios de venta, costos, códigos de barra, categorías y niveles mínimos de stock. Configura impuestos y descripciones personalizadas de manera organizada.</p>
+                <ul class="features">
+                  <li>Códigos de barras</li>
+                  <li>Control de precios e IVA</li>
+                  <li>Importación masiva</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="gallery-kardex" class="gallery-panel">
+            <div class="gallery-grid">
+              <div class="gallery-image-container browser-frame">
+                <div class="browser-header">
+                  <div class="browser-dots">
+                    <span class="browser-dot red"></span>
+                    <span class="browser-dot yellow"></span>
+                    <span class="browser-dot green"></span>
+                  </div>
+                  <div class="browser-address">app.logify.com/inventory/kardex</div>
+                </div>
+                <div class="browser-content">
+                  <img src="./assets/img/kardex.png" alt="Control de Inventario Kardex en Logify" />
+                </div>
+              </div>
+              <div class="gallery-description">
+                <h3>Kardex y Control de Stock</h3>
+                <p>Mantén un registro impecable de cada entrada y salida de mercancía. Nuestro sistema Kardex documenta cada movimiento de inventario automáticamente, ayudándote a prevenir pérdidas e inconsistencias.</p>
+                <ul class="features">
+                  <li>Historial de movimientos</li>
+                  <li>Valoración de inventario</li>
+                  <li>Reporte de stock mínimo</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -273,11 +411,11 @@
     </section>
 
     <!-- Servicios -->
-    <section id="servicios" class="section">
+    <section id="servicios" class="section fade-in-up">
       <div class="container">
         <h2>Servicios</h2>
         <p class="section-lead">Soluciones end‑to‑end para lanzar y escalar productos digitales.</p>
-        <div class="cards grid-3">
+        <div class="cards grid-4">
           <article class="card">
             <div class="icon">▦</div>
             <h3>Web Apps & Dashboards</h3>
@@ -313,7 +451,7 @@
     </section>
 
     <!-- Tecnologías -->
-    <section id="tecnologias" class="section alt">
+    <section id="tecnologias" class="section alt fade-in-up">
       <div class="container">
         <h2>Tecnologías</h2>
         <div class="tech-grid">
@@ -348,29 +486,29 @@
     </section>
 
     <!-- Historia / Por qué -->
-    <section id="por-que" class="section">
+    <section id="por-que" class="section fade-in-up">
       <div class="container why-grid">
         <div>
-          <p class="pill">Nuestra historia</p>
-          <h2>Cómo nació <span class="accent">INNOVATECH</span></h2>
-          <p>Desde 2025 ayudamos a equipos a convertir ideas en productos listos para mercado. Trabajamos con un enfoque pragmático: diseño claro, entregas rápidas y métricas desde el inicio.</p>
-          <p>Podemos compartir referencias verificables durante una llamada de descubrimiento.</p>
+          <p class="pill">Sobre nosotros</p>
+          <h2>El poder detrás de <span class="accent">Logify</span></h2>
+          <p>Logify es la plataforma integral de facturación electrónica y control de inventarios creada para simplificar la vida de emprendedores y empresas. Automatizamos tus procesos con tecnología de punta y soporte continuo.</p>
+          <p>Nuestra misión es hacer que facturar y gestionar tu stock sea simple, rápido y libre de complicaciones.</p>
 
           <div class="badges">
-            <div class="badge"><strong>2025</strong><span>Fundación</span></div>
-            <div class="badge"><strong>Guayaquil</strong><span>Ciudad</span></div>
-            <div class="badge"><strong>Sprints + CI/CD</strong><span>Enfoque</span></div>
+            <div class="badge"><strong>2025</strong><span>Lanzamiento</span></div>
+            <div class="badge"><strong>Guayaquil</strong><span>Sede</span></div>
+            <div class="badge"><strong>Nube + SRI</strong><span>Tecnología</span></div>
           </div>
         </div>
         <ul class="timeline">
-          <li><span class="dot"></span><div><strong>2025</strong> Equipo compacto, enfoque senior. Inicio de automatizaciones y despliegues robustos.</div></li>
-          <li><span class="dot"></span><div><strong>Hoy</strong> Crecimiento sostenido con soporte directo del founder.</div></li>
+          <li><span class="dot"></span><div><strong>2025</strong> Lanzamiento de la versión inicial con facturación electrónica nativa.</div></li>
+          <li><span class="dot"></span><div><strong>Hoy</strong> Más de 100 negocios optimizando sus inventarios y facturando en segundos.</div></li>
         </ul>
       </div>
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="section alt">
+    <section id="contacto" class="section alt fade-in-up">
       <div class="container contact-grid">
         <div class="card form">
           <h2>Cuéntanos tu proyecto</h2>
@@ -401,11 +539,11 @@
           </form>
         </div>
         <aside class="contact-aside">
-          <div class="info"><span>✉</span> garciajonathan268@gmail.com</div>
+          <div class="info"><span>✉</span> logify@nexusfact.com</div>
           <div class="info"><span>☎</span> +593 987 285 191</div>
           <div class="info"><span>☎</span> +593 99 496 4832</div>
           <div class="info"><span>📍</span> Guayaquil · Ecuador</div>
-          <p class="fine">Tiempo de arranque: 48–72h desde la aprobación del alcance.</p>
+          <p class="fine">Activación inmediata del sistema tras la configuración inicial.</p>
         </aside>
       </div>
     </section>
@@ -414,8 +552,11 @@
   <footer class="site-footer">
     <div class="container footer-grid">
     <div>
-        <a class="brand" href="#home"><span class="logo">››</span><span class="brand-name">INNOVATECH</span></a>
-        <p>Construimos software, datos y automatización con foco en resultados. Diseño limpio, ingeniería sólida y entregas en sprints.</p>
+        <a class="brand" href="#home">
+          <img class="brand-logo" src="./assets/img/logo.jpeg" alt="Logify Logo" />
+          <span class="brand-name">Logify</span>
+        </a>
+        <p>Tu sistema de facturación y control de inventarios todo en uno. Rápido, seguro y 100% en la nube.</p>
         <div class="socials">
           <a aria-label="Instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
           <a aria-label="Facebook" href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -435,7 +576,7 @@
       <div>
         <h4>Contáctanos</h4>
         <ul>
-      <li>garciajonathan268@gmail.com</li>
+      <li>logify@nexusfact.com</li>
       <li>+593 987 285 191</li>
       <li>+593 99 496 4832</li>
       <li>Guayaquil · Ecuador</li>
@@ -443,7 +584,7 @@
       </div>
     </div>
     <div class="container legal">
-      <small>© 2025 INNOVATECH. Todos los derechos reservados.</small>
+      <small>© 2025 Logify. Todos los derechos reservados.</small>
       <div class="links">
         <a href="#">Términos</a>
         <a href="#">Privacidad</a>

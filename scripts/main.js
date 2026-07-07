@@ -72,9 +72,9 @@ if (form && waBtn) {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(form).entries());
-    const subject = encodeURIComponent('Nuevo proyecto — Innovatech');
+    const subject = encodeURIComponent('Nuevo proyecto — Logify');
     const body = buildMessage(data);
-    window.location.href = `mailto:garciajonathan268@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:logify@nexusfact.com?subject=${subject}&body=${body}`;
   });
 }
 
@@ -105,3 +105,51 @@ if (apiCard && apiSection) {
     }
   });
 }
+
+// Gallery Tabs Interactivity
+const tabs = document.querySelectorAll('.gallery-tab');
+const panels = document.querySelectorAll('.gallery-panel');
+
+if (tabs.length > 0 && panels.length > 0) {
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // Remove active class from all tabs
+      tabs.forEach(t => t.classList.remove('active'));
+      // Add active class to clicked tab
+      tab.classList.add('active');
+      
+      // Hide all panels
+      panels.forEach(p => p.classList.remove('active'));
+      // Show corresponding panel
+      const targetId = tab.getAttribute('data-target');
+      const targetPanel = document.getElementById(targetId);
+      if (targetPanel) {
+        targetPanel.classList.add('active');
+      }
+    });
+  });
+}
+
+// Scroll animations with IntersectionObserver
+const fadeElements = document.querySelectorAll('.fade-in-up');
+if (fadeElements.length > 0) {
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px 0px -50px 0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target); // Stop observing once animated
+      }
+    });
+  }, observerOptions);
+
+  fadeElements.forEach(el => {
+    observer.observe(el);
+  });
+}
+
